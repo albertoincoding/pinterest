@@ -119,6 +119,17 @@ section {
     display: block;
     margin: 5%;
     width: 252px;
+}
+
+.image-holder:hover .box-filler {
+    display: block !important;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.493);
+    height: 100%;
+    width: 100%;
     display: flex;
 }
 
@@ -135,20 +146,39 @@ section {
 }
 
 .box-filler {
-    display: none;
+    display: none !important;
     position: absolute;
+    z-index: 1;
+    display: block;
     border-radius: 30px;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.493);
     height: 100%;
     width: 100%;
-    z-index: 1;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: flex-end;
+}
+
+.flex-top {
+    display: none;
+    margin-top: 10px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-bottom {
+    display: none;
+    margin-bottom: 10px;
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .red-button {
-    position: absolute;
     background-color: red;
     color: white;
     font-family: 'Roboto', sans-serif;
@@ -162,10 +192,7 @@ section {
 }
 
 .image-holder h1 {
-    margin-left: 140px;
-    margin-top: 5px;
     z-index: 1;
-    position: absolute;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -173,36 +200,37 @@ section {
 
 .white-button {
     z-index: 1;
-    position: absolute;
-    margin-top: 50px;
-    margin-left: 100px;
     background-color: white;
     border:none;
     border-radius: 24px;
     font-family: 'Roboto', sans-serif;
-    color: rgba(0, 0, 0, 0.842);
+    color: rgb(0, 0, 0);
 }
 
 .upload-button {
     z-index: 1;
-    position: absolute;
-    margin-top: 50px;
-    margin-left: 100px;
     background-color: white;
     border:none;
     border-radius: 24px;
     font-family: 'Roboto', sans-serif;
-    color: rgba(0, 0, 0, 0.842);
 }
 
 .upload-button img {
-    height: 20px;
-   
+    height: 20px;   
 }
 
-.box-filler:hover {
-    display: block;
-    background-color: rgba(0, 0, 0, 0.466);
+.material-icons-outlined{
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px !important;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
 }
 
 
